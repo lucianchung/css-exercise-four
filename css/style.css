@@ -1,4 +1,95 @@
+*, *: before, *: after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
-  font-size: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 1.8em auto;
+}
+
+.emphasis {
+  font-family: sans-serif;
+  font-size: 1em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+/* The different percentages for the background-sizes might cause
+uneven scaling while adjusting responsive display size */
+
+.baku {
+  background: url(/images/baku.jpg) no-repeat center;
+  background-size: 114%;
+}
+
+.london {
+  background: url(/images/london.png) no-repeat right bottom;
+  background-size: 120%;
+}
+
+.madrid {
+  background: url(/images/madrid.jpg) no-repeat left center;
+  background-size: 138%;
+}
+
+.rome {
+  background: url(/images/rome.jpg) no-repeat bottom;
+  background-size: 127%;
+}
+
+.preview {
+  height: 21em;
+  margin: 0 0 2em 0;
+  width: 100%
+}
+
+.preview h1 {
+  font-family: serif;
+  font-size: 1.7em;
+  text-align: left;
+  margin: 0;
+  padding: 1.5em 0 0 1.5em;
+}
+
+/* Two column format for tablets */
+
+@media screen and (min-width: 575px) {
+  .container {
+    margin: auto;
+    width: 95%;
+  }
+  .preview {
+    float: right;
+    height: 17em;
+    margin: 2%;
+    width:46%;
+  }
+  .preview h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Four column format for laptops */
+
+@media screen and (min-width: 991px) {
+  .preview {
+    height: 15em;
+    margin: 1%;
+    width:23%;
+  }
+  .preview h1 {
+    font-size: 1.5em;
+    padding: 1em 0 0 1em;
+  }
 }
