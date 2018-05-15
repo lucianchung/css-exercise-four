@@ -29,23 +29,23 @@ body {
 uneven scaling while adjusting responsive display size */
 
 .baku {
-  background: url(/images/baku.jpg) no-repeat center;
-  background-size: 114%;
+  background: url(../images/baku.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .london {
-  background: url(/images/london.png) no-repeat right bottom;
-  background-size: 120%;
+  background: url(../images/london.png) no-repeat right bottom;
+  background-size: cover;
 }
 
 .madrid {
-  background: url(/images/madrid.jpg) no-repeat left center;
-  background-size: 138%;
+  background: url(../images/madrid.jpg) no-repeat left center;
+  background-size: cover;
 }
 
 .rome {
-  background: url(/images/rome.jpg) no-repeat bottom;
-  background-size: 127%;
+  background: url(../images/rome.jpg) no-repeat bottom;
+  background-size: cover;
 }
 
 .preview {
