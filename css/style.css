@@ -84,6 +84,7 @@ uneven scaling while adjusting responsive display size */
 
 @media screen and (min-width: 991px) {
   .preview {
+    float: left;
     height: 15em;
     margin: 1%;
     width:23%;
